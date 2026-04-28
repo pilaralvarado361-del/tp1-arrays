@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP2 - Arrays y DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        line-height: 1.5;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      .activo {
+        background: #ffe8a3;
+        border: 1px solid #e4b600;
+      }
+
+      .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+      }
+
+      .tarjeta {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .tarjeta img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      code {
+        background: #f4f4f4;
+        padding: 0.2rem 0.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Resolución TP2 (Arrays + DOM)</h1>
+
+    <section>
+      <h2>Consola (ejercicios de arrays)</h2>
+      <p>
+        Abrí la consola del navegador para ver resultados de los ejercicios 1 al 5 de
+        arrays.
+      </p>
+    </section>
+
+    <section>
+      <h2>1) Lista dinámica</h2>
+      <ul id="listaNombres"></ul>
+    </section>
+
+    <section>
+      <h2>2) Modificar contenido por ID</h2>
+      <p id="textoEditable">Texto original del elemento.</p>
+      <button id="btnCambiarTexto">Cambiar texto</button>
+    </section>
+
+    <section>
+      <h2>3) Agregar/quitar clases</h2>
+      <button id="btnToggleClase">Hacé click para alternar clase</button>
+    </section>
+
+    <section>
+      <h2>4) Formulario dinámico</h2>
+      <form id="formNombres">
+        <input id="inputNombre" type="text" placeholder="Escribí un nombre" required />
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="listaFormulario"></ul>
+    </section>
+
+    <section>
+      <h2>5) Tarjetas desde array de objetos</h2>
+      <div id="contenedorTarjetas" class="tarjetas"></div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
